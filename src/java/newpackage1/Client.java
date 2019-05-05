@@ -16,7 +16,8 @@ public class Client implements Serializable{
    private double a;
    private double b;
 
-   
+
+
     public double getA() {
         return a;
     }
@@ -31,21 +32,21 @@ public class Client implements Serializable{
         this.b = b;
     }
    
-   public double Addition(){
-       System.out.println(a+b);
+   public double addition(){
+       //System.out.println(a+b);
        return a+b;
    }
   
-   public double Subtraction (){
-       System.out.println(a-b);
+   public double subtraction (){
+       //System.out.println(a-b);
        return a-b;
    }
    
-   public double Division(){
+   public double division(){
        double i = 0;
        try {
            i=a/b;
-           System.out.println(i);
+           //System.out.println(i);
        }
        catch (ArithmeticException ex){
            System.out.println(ex.toString());
@@ -53,8 +54,8 @@ public class Client implements Serializable{
        return i;
    }
    
-   public double Multiplication(){
-       System.out.println(a*b);
+   public double multiplication(){
+       //System.out.println(a*b);
        return a*b;
    }
 }
